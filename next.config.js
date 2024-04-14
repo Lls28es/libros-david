@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["educomlab.com", "firebasestorage.googleapis.com", "localhost"],
+    domains: ['localhost'],
+    // domains: ['educomlab.com', 'firebasestorage.googleapis.com', 'localhost'],
   },
 };
 
