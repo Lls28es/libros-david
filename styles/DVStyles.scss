@@ -224,8 +224,10 @@ button {
     box-shadow: 0px 0px 10px 1px #919090d0;
     width: 120px;
     height: 65px;
+    background: white;
 
     img {
+        border-radius: 20px;
         width: -webkit-fill-available;
     }
 }
