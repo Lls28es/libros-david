@@ -31,26 +31,6 @@ export default function Header(props) {
                 src="/images/logo-prt.png"
               />
             </a> */}
-          <div className="logo"></div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggler"
-            aria-controls="navbarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon">
-              <img
-                alt="menu-mobile"
-                className="w-100"
-                src="/menu.png"
-                onClick={() => toggleNavbar()}
-              />
-            </span>
-          </button>
-
           <div
             className={
               navBarOpen
@@ -99,6 +79,25 @@ export default function Header(props) {
               </li>
             </ul>
           </div>
+          <div className="logo"></div>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon">
+              <img
+                alt="menu-mobile"
+                className="w-100"
+                src="/menu.png"
+                onClick={() => toggleNavbar()}
+              />
+            </span>
+          </button>
         </nav>
       </div>
     </Fragment>
