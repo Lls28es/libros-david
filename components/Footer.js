@@ -5,27 +5,28 @@ const Footer = () => (
     <div className="container-fluid py-4" id="footer-links">
       <div className="row">
         <div className="col-md-1"></div>
+        <div className="col-md-3"></div>
         <div className="col-md-3">
-          <Link href="/reservas">
-            <p>Revisión Técnica</p>
+          <Link href="/sobreMi">
+            <p className="fs-14">Sobre Mi</p>
           </Link>
         </div>
         <div className="col-md-3">
-          <Link href="/informacion">
-            <p>Información y ayuda</p>
+          <Link href="/contacto">
+            <p className="fs-14">Contacto</p>
           </Link>
-          <Link href="/informacion#educacion">
+          {/* <Link href="/informacion#educacion">
             <p>Educación al usuario</p>
-          </Link>
+          </Link> */}
         </div>
-        <div className="col-md-3">
+        {/* <div className="col-md-3">
           <Link href="/reserva">
             <p>Reserva tu cita para RT</p>
           </Link>
           <Link href="/reservas/anular">
             <p>Anula tu reserva</p>
           </Link>
-        </div>
+        </div> */}
         <div className="col-md-2"></div>
         <div className="col-md-1"></div>
       </div>
