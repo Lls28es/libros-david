@@ -2,8 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/Basic_FontSize-Medias.scss';
 import '../styles/style.css';
 import '../styles/DVStyles.scss';
-
-import { NextUIProvider } from '@nextui-org/react';
+import '../styles/estilosGenerales.scss';
 
 function MyApp({ Component, pageProps }) {
   return (

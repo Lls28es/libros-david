@@ -10,7 +10,7 @@ function SobreMi() {
           <Head>
             <title>Libros</title>
           </Head>
-          <div className="row align-items-center justify-content-center p-3">
+          <div className="row align-items-center justify-content-center p-3 pb-4">
             SOBRE MI
           </div>
         </Layout>

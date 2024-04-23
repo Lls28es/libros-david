@@ -15,7 +15,6 @@ const CheckSession = (inside) => {
         if (logged?.user) {
           window.location.href = `/`;
         } else {
-          console.log('3');
           localStorage.removeItem('us_tok');
           localStorage.removeItem('us_adta');
           window.location.href = '/auth/login';

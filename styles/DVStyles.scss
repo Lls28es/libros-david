@@ -1,211 +1,55 @@
-* {
-    margin: 0px;
-}
-
-// *,
-// ::after,
-// ::before {
-//     box-sizing: border-box;
-// }
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-button {
-    outline: none !important;
-    border: none;
-
-    &:focus,
-    &:active,
-    & :hover {
-        outline: none;
-        border: none;
-        box-shadow: none;
-    }
-
-    & :hover {
-
-        opacity: 0.8;
-        transition: 0.4s;
-    }
-}
-
-.pointer {
-    cursor: pointer !important;
-}
-
 /* ----- mixines ----- */
+
 @mixin borderTxt {
     border-bottom-style: solid;
     border-bottom-width: 3px;
     width: fit-content;
 }
 
-/* ----- font family ----- */
-.ff-app {
-    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol" !important;
+@mixin cBlue {
+    color: #08587d;
 }
 
-.ff-Inter {
-    font-family: '__Inter_8e2fd7';
+@mixin bgBlue {
+    background: #08587d;
 }
 
-.ff-sys {
-    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol";
+@mixin scale {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+    // filter: grayscale(1);
 }
 
-.font-family-gotham {
-    font-family: Gotham, Arial, sans-serif;
-}
+/* ----- otros ----- */
 
-.ff-inherit {
-    font-family: inherit;
-    letter-spacing: 0.3px;
-}
-
-/* ----- font weight ----- */
-.fw-500 {
-    font-weight: 500 !important;
-}
-
-.fw-600 {
-    font-weight: 600 !important;
-}
-
-.fw-700 {
-    font-weight: 700 !important;
-}
-
-.fw-800 {
-    font-weight: 800 !important;
-}
-
-.fw-900 {
-    font-weight: 900 !important;
-}
-
-.eb {
-    font-weight: 900;
-}
-
-
-/* ----- font style ----- */
-.fs-it {
-    font-style: italic !important;
-}
-
-/* ----- line height ----- */
-.ls-0p25 {
-    letter-spacing: 0.25px;
-}
-
-.ls-0p5 {
-    letter-spacing: 0.5px;
-}
-
-.ls-1p {
-    letter-spacing: 1px;
-}
-
-.lh-0p7 {
-    line-height: 0.7 !important;
-}
-
-.lh-1p {
-    line-height: 1 !important;
-}
-
-.lh-1p1 {
-    line-height: 1.1 !important;
-}
-
-.lh-1p2 {
-    line-height: 1.2;
-}
-
-.lh-1p3 {
-    line-height: 1.3;
-}
-
-.lh-1p5 {
-    line-height: 1.5;
-}
-
-.lh-26 {
-    line-height: 26px;
-}
-
-.pdl-35 {
-    padding-left: 35px;
-}
-
-/* --------------- BOOTSTRAP --------------- */
-.heightAuto {
-    height: auto;
-}
-
-.height-416 {
-    height: 416px !important;
-}
-
-.height-100 {
-    height: 100%;
-}
-
-.height-95 {
-    height: 95%;
-}
-
-.height-87 {
-    height: 87%;
-}
-
-.d-contents {
-    display: contents !important;
-}
-
-.f-wrape {
-    flex-wrap: nowrap !important;
-}
-
-.vert-align {
-    vertical-align: middle;
-}
-
-.vert-align-super {
-    vertical-align: super;
-}
-
-.br-none {
-    border-radius: 0px !important;
-}
-
-//////////////////////////////////////////////////////////
-
+.buttonBuy2,
+.buttonBuy3,
 .buttonBuy,
 .buttonMore {
 
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     text-align: center;
-    color: white;
+    color: #ffffff;
     width: 120px !important;
     margin: 5px !important;
     padding: 10px 25px;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px #919090d0;
     // text-transform: uppercase;
     text-decoration: none;
     transition: 0.3s;
 
+    &:focus,
+    &:active,
     &:hover {
-        opacity: 0.9 !important;
         color: white !important;
+        opacity: 0.9;
+        @include scale()
     }
 }
 
@@ -213,8 +57,18 @@ button {
     background: #2f2c2c;
 }
 
+.buttonBuy2 {
+    color: rgb(80, 133, 231);
+    background: #2f2c2c;
+}
+
+.buttonBuy3 {
+    color: rgb(245, 222, 12);
+    background: #2f2c2c;
+}
+
 .buttonMore {
-    background: #08587d;
+    @include bgBlue()
 }
 
 .buyMP,
@@ -225,6 +79,13 @@ button {
     width: 120px;
     height: 65px;
     background: white;
+    transition: 0.3s;
+
+    &:focus,
+    &:active,
+    &:hover {
+        @include scale()
+    }
 
     img {
         border-radius: 20px;
@@ -305,6 +166,41 @@ button {
     }
 }
 
+.bookImages {
+
+    h2 {
+        text-align: center;
+    }
+
+    min-width: 100%;
+
+    .boxImages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .contImage {
+
+            margin: 7px;
+            // max-width: 220px;
+
+
+
+            min-height: 100px;
+            max-height: 220px;
+            height: 220px;
+            img {
+                // object-fit: contain !important;
+                // height: 220px;
+                max-width: -webkit-fill-available;
+                max-height: -webkit-fill-available;
+
+                box-shadow: 0px 0px 10px 1px #919090d0;
+            }
+        }
+    }
+}
 
 /* Header */
 
@@ -344,7 +240,7 @@ button {
         .nav-link {
             font-size: 17px;
             font-weight: 500;
-            color: #08587D;
+            @include cBlue();
             margin: 0px 15px;
         }
 

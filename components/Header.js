@@ -9,7 +9,7 @@ export default function Header(props) {
 
   useEffect(() => {
     setCurrentPath(router.route);
-    console.log(router);
+    // console.log(router);
   }, []);
 
   const toggleNavbar = () => {
@@ -18,11 +18,7 @@ export default function Header(props) {
 
   return (
     <Fragment>
-      <div
-        className="header"
-        // id={this.props.isHome == "true" ? "header-transparent" : "header"}
-        id="header"
-      >
+      <div className="header" id="header">
         <nav className="navbar navbar-expand-lg px-1">
           {/* <a className="navbar-brand" href="/">
               <img
@@ -44,7 +40,7 @@ export default function Header(props) {
                 className={currentPath == '/' ? 'nav-item active' : 'nav-item'}
               >
                 <Link href="/" className="nav-link">
-                  Home
+                  Inicio
                 </Link>
               </li>
 

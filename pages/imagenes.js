@@ -1,17 +1,68 @@
-import React, { Fragment } from 'react';
+import { React, Fragment, useEffect, useState } from 'react';
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import ListaLibros from '../components/ListaLibros';
+import ListImages from '../components/ListImages';
 
 function Imagenes() {
+  const [books, setBooks] = useState([]);
+  const [images, setImages] = useState([]);
+  useEffect(() => {
+    fun(ListaLibros);
+  }, []);
+
+  const fun = (data) => {
+    let auxImages = [];
+    data.forEach((x) => {
+      let aux = [];
+      x.gallery.dir = x.gallery.file.slice(0, x.gallery.file.indexOf('?'));
+      let amount = x.gallery.amount;
+      for (let i = 1; i < amount; i++) {
+        aux.push(`/imagen ${i}`);
+      }
+      auxImages.push(aux);
+    });
+
+    setBooks(data);
+    setImages(auxImages);
+  };
+
   return (
     <div className="container-fluid px-0 disp_cont">
       <div className="row w-100 mx-0" id="wrapper">
         <Layout>
           <Head>
-            <title>Libros</title>
+            <title>Galería</title>
           </Head>
-          <div className="row align-items-center justify-content-center p-3">
-            IMAGENES
+          <div className="row align-items-center justify-content-center px-3 pb-4">
+            <div id="boxBook" className="row">
+              {books.length !== 0
+                ? books.map((y, j) => {
+                    return (
+                      <div className="bookImages col-12 py-2">
+                        <h2 className="p-1">{y.title}</h2>
+                        <div className="boxImages row">
+                          {images[j].length !== 0
+                            ? images[j].map((x, i) => {
+                                let aux = images[j][i];
+                                return (
+                                  <ListImages
+                                    image={{
+                                      alt: `${aux}`,
+                                      src: `/libros/${y.gallery.dir}/${aux}.jpg`,
+                                    }}
+                                    key={[j][i]}
+                                  />
+                                );
+                              })
+                            : null}
+                        </div>
+                        <hr className="mt-5" />
+                      </div>
+                    );
+                  })
+                : null}
+            </div>
           </div>
         </Layout>
       </div>
