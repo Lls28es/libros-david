@@ -7,7 +7,7 @@ const Lectura = ({ detail }) => (
     </div> */}
     <div className="col-12 detailBook">
       <h2 className="titleBook text-center">{detail.title}</h2>
-      {/* <p className="subtBook">Descripción:</p> */}
+      {/* <p className="detSubrBook">Descripción:</p> */}
       <div className="readBook">{detail.read}</div>
       <div className="boxButtonsBook justify-content-center mb-4">
         <a className="buttonBuy" href="/">

@@ -14,6 +14,22 @@
     background: #08587d;
 }
 
+@mixin cBlue2 {
+    color: #5085e7;
+}
+
+@mixin cRed {
+    color: #be211c;
+}
+
+@mixin cYellow {
+    color: #efc90c;
+}
+
+@mixin bgGrey {
+    background: #2f2c2c;
+}
+
 @mixin scale {
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
@@ -25,24 +41,27 @@
 
 /* ----- otros ----- */
 
+.buttonMl-0 {
+    margin-left: 0px !important;
+}
+
 .buttonBuy2,
 .buttonBuy3,
 .buttonBuy,
 .buttonMore {
-
     display: block;
     font-size: 17px;
     font-weight: 600;
     text-align: center;
     color: #ffffff;
     width: 120px !important;
-    margin: 5px !important;
+    margin: 5px;
     padding: 10px 25px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 1px #919090d0;
-    // text-transform: uppercase;
     text-decoration: none;
     transition: 0.3s;
+    // text-transform: uppercase;
 
     &:focus,
     &:active,
@@ -54,17 +73,17 @@
 }
 
 .buttonBuy {
-    background: #2f2c2c;
+    @include bgGrey()
 }
 
 .buttonBuy2 {
-    color: rgb(80, 133, 231);
-    background: #2f2c2c;
+    @include cBlue2();
+    @include bgGrey();
 }
 
 .buttonBuy3 {
-    color: rgb(245, 222, 12);
-    background: #2f2c2c;
+    @include cYellow();
+    @include bgGrey();
 }
 
 .buttonMore {
@@ -94,19 +113,14 @@
 }
 
 .buyAm {
-    margin-left: 0px;
     padding: 12px 10px 8px 10px;
 }
 
 .buyMP {
-    margin-right: 0px;
     padding: 0px 2px;
-
-
 }
 
 #boxBook {
-
     max-width: 1200px;
 
     .imageBook {
@@ -120,20 +134,57 @@
     .titleBook {
         font-size: 30px;
         font-weight: 500;
-        margin-bottom: 20px;
     }
 
-    .subtBook {
-        font-size: 18px;
+    .observationBlue,
+    .observationRed {
+        margin-bottom: 20px;
+        font-size: 15px;
         font-weight: 600;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
+        @include cBlue2();
+    }
+
+    .observationRed {
+        @include cRed();
+    }
+
+    .detBook {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 12px;
+    }
+
+    .detNormBook {
+        margin-bottom: 10px;
+    }
+
+    .detMargBook {
+        margin-left: 10px;
+    }
+
+    .detSubrBook {
+        font-weight: 600;
         @include borderTxt();
         border-bottom-width: 3px;
         border-image: linear-gradient(to right, #d3d3d3 0%, #d3d3d3 100%) 1;
     }
 
-    .descBook {
+    .detNormBook,
+    .detMargBook,
+    .detSubrBook {
         font-size: 18px;
+    }
+
+    .detMargBook,
+    .detSubrBook {
+        line-height: 19px !important;
+        margin-bottom: 2px;
+    }
+
+    .detNormBook,
+    .detMargBook {
         color: #474747;
         font-weight: 400;
     }
@@ -162,17 +213,15 @@
             text-align: center;
             font-style: italic;
         }
-
     }
 }
 
 .bookImages {
+    min-width: 100%;
 
     h2 {
         text-align: center;
     }
-
-    min-width: 100%;
 
     .boxImages {
         display: flex;
@@ -181,22 +230,18 @@
         width: 100%;
 
         .contImage {
-
             margin: 7px;
-            // max-width: 220px;
-
-
-
             min-height: 100px;
             max-height: 220px;
             height: 220px;
+            // max-width: 220px;
+
             img {
-                // object-fit: contain !important;
-                // height: 220px;
                 max-width: -webkit-fill-available;
                 max-height: -webkit-fill-available;
-
                 box-shadow: 0px 0px 10px 1px #919090d0;
+                // object-fit: contain !important;
+                // height: 220px;
             }
         }
     }
@@ -251,78 +296,23 @@
 }
 
 /* Footer */
-#footer-calendar {
-    /* width: 70%; */
-    background-color: #032a51;
-    border-radius: 17px;
-}
-
-#footer-calendar h2 {
-    text-transform: uppercase;
-    font-size: 24px;
-}
-
-#footer-calendar .calendar-title h3 {
-    /* background: #113f77; */
-    color: white;
-    font-size: 12px;
-    padding: 12px;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-#footer-calendar .calendar-digit {
-    color: white;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-#footer-calendar .calendar-digit p {
-    /* background-color: #001637; */
-    font-size: 12px;
-    margin: 0;
-    /* height: 60%; */
-    /* padding: 10px 0px; */
-}
-
-#footer-calendar .calendar-advance {
-    /* background-color: #efc90c !important; */
-    font-size: 12px;
-    padding: 10px 0px;
-    color: white;
-    font-weight: bold;
-    min-height: 50px;
-}
-
-#footer-calendar .calendar-digit p span {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-#footer-form {
-    background-color: #001637;
-}
 
 #footer-form h3 {
     font-weight: bold;
     text-transform: uppercase;
 }
 
-#footer-form span {
-    color: #efc90c;
-}
-
 #footer-links,
 #footer-links a {
-    background-color: black;
-    color: #919191;
+    background: #141414;
+    color: #8d8f94;
     font-size: 12px;
     cursor: pointer;
 }
 
 #footer-links p:hover,
 #footer-links a:hover {
-    color: #efc90c;
+    @include cYellow();
     text-decoration: none;
 }
 
@@ -331,7 +321,6 @@
 }
 
 @media (max-width: 340px) {
-
     .navbar {
         padding: 8px 1px !important;
     }
