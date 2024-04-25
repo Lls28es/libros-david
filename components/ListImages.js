@@ -5,13 +5,7 @@ const ListImages = (props) => {
   console.log(props);
   return (
     <div className="contImage ">
-      <img
-        alt={image.alt}
-        className={`${
-          index === 0 ||index === 1 ? 'imgEstilo2' :  index === 2 ||index === 3 ? 'imgEstilo3' : 'imgEstilo1'
-        }`}
-        src={image.src}
-      />
+      <img alt={image.alt} src={image.src} />
     </div>
   );
 };
