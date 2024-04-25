@@ -41,6 +41,29 @@
 
 /* ----- otros ----- */
 
+.nextui-tooltip-content {
+    padding: 2px 7px;
+    opacity: 0.5 !important;
+    user-select: none;
+    z-index: 2;
+    margin-top: -10px;
+
+    .nextui-tooltip {
+        font-size: 11px;
+    }
+}
+
+.greyColor {
+
+    filter: contrast(65%);
+    transform: scale(1) !important;
+
+    img {
+
+        filter: saturate(0%);
+    }
+}
+
 .buttonMl-0 {
     margin-left: 0px !important;
 }
