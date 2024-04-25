@@ -98,7 +98,7 @@ const Libros = ({ detail }) => (
               </button>
             )}
           </div>
-          {/* <p className="fs-12 ff-gotham text-muted mt-5 mx-2">
+          <p className="fs-12 ff-gotham text-muted mt-5 mx-2">
             {detail.linkAmazon && detail.linkAmazon
               ? '* Amazon libro físico y digital. Mercado Pago libro digital'
               : detail.linkAmazon
@@ -106,7 +106,7 @@ const Libros = ({ detail }) => (
               : detail.linkAmazon
               ? '*Mercado Pago: libro digital'
               : ''}
-          </p> */}
+          </p>
         </>
       ) : null}
     </div>
