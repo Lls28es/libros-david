@@ -15,10 +15,12 @@ function Imagenes() {
     let auxImages = [];
     data.forEach((x) => {
       let aux = [];
-      x.gallery.dir = x.gallery.file.slice(0, x.gallery.file.indexOf('?'));
-      let amount = x.gallery.amount;
-      for (let i = 1; i < amount; i++) {
-        aux.push(`/imagen ${i}`);
+      if (x?.gallery) {
+        x.gallery.dir = x.gallery.file.slice(0, x.gallery.file.indexOf('?'));
+        let amount = x.gallery.amount;
+        for (let i = 1; i < amount; i++) {
+          aux.push(`/imagen ${i}`);
+        }
       }
       auxImages.push(aux);
     });
@@ -39,26 +41,31 @@ function Imagenes() {
               {books.length !== 0
                 ? books.map((y, j) => {
                     return (
-                      <div className="bookImages col-12 py-2">
-                        <h2 className="p-1">{y.title}</h2>
-                        <div className="boxImages row">
-                          {images[j].length !== 0
-                            ? images[j].map((x, i) => {
-                                let aux = images[j][i];
-                                return (
-                                  <ListImages
-                                    image={{
-                                      alt: `${aux}`,
-                                      src: `/libros/${y.gallery.dir}/${aux}.jpg`,
-                                    }}
-                                    key={[j][i]}
-                                  />
-                                );
-                              })
-                            : null}
-                        </div>
-                        <hr className="mt-5" />
-                      </div>
+                      <>
+                        {images[j].length !== 0 ? (
+                          <div className="bookImages col-12 py-2">
+                            <h2 className="p-1">{y.title}</h2>
+                            <div className="boxImages row">
+                              {images[j].length !== 0
+                                ? images[j].map((x, i) => {
+                                    let aux = images[j][i];
+                                    return (
+                                      <ListImages
+                                        image={{
+                                          alt: `${aux}`,
+                                          src: `/libros/${y.gallery.dir}/${aux}.jpg`,
+                                        }}
+                                        index={j + i}
+                                        key={j + i}
+                                      />
+                                    );
+                                  })
+                                : null}
+                            </div>
+                            <hr className="mt-5" />
+                          </div>
+                        ) : null}
+                      </>
                     );
                   })
                 : null}

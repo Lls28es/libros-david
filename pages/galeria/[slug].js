@@ -56,6 +56,7 @@ function Index({ slug, id }) {
                                 alt: `${x}`,
                                 src: `/libros/${slug}/${x}.jpg`,
                               }}
+                              index={i}
                               key={i}
                             />
                           );

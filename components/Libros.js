@@ -64,41 +64,25 @@ const Libros = ({ detail }) => (
 
           <div className="boxButtonsBook my-2">
             {detail.linkAmazon ? (
-              <Tooltip
-                content={'libro físico y digital'}
-                color="invert"
-                placement="bottom"
-                animated="false"
-                hideArrow="true"
-              >
-                <button className="buyAm buttonMl-0">
-                  <img alt="buyAm" className="" src="/amazon.png" />
-                </button>
-              </Tooltip>
+              <button className="buyAm buttonMl-0">
+                <img alt="buyAm" className="" src="/amazon.png" />
+              </button>
             ) : (
               <button className="greyColor buyAm buttonMl-0">
                 <img alt="buyAm" src="/amazon.png" />
               </button>
             )}
             {detail.linkMP ? (
-              <Tooltip
-                content={'libro digital'}
-                color="invert"
-                placement="bottom"
-                animated="false"
-                hideArrow="true"
-              >
-                <button className="buyMP">
-                  <img alt="buyMP" className="" src="Mercado-libre.jpg" />
-                </button>
-              </Tooltip>
+              <button className="buyMP">
+                <img alt="buyMP" className="" src="Mercado-libre.jpg" />
+              </button>
             ) : (
               <button className="greyColor buyMP">
                 <img alt="buyMP" className="" src="Mercado-libre.jpg" />
               </button>
             )}
           </div>
-          <p className="fs-12 ff-gotham text-muted mt-5 mx-2">
+          <p className="fs-12 ff-gotham text-muted mt-1 mx-2">
             {detail.linkAmazon && detail.linkAmazon
               ? '* Amazon libro físico y digital. Mercado Pago libro digital'
               : detail.linkAmazon
