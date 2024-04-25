@@ -4,7 +4,7 @@ const ListImages = (props) => {
   let { image, index } = props;
   console.log(props);
   return (
-    <div className="contImage col">
+    <div className="contImage ">
       <img
         alt={image.alt}
         className={`${
