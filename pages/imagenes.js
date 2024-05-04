@@ -55,6 +55,7 @@ function Imagenes() {
                                           alt: `${aux}`,
                                           src: `/libros/${y.gallery.dir}/${aux}.jpg`,
                                         }}
+                                        desc={'texto'}
                                         index={j + i}
                                         key={j + i}
                                       />

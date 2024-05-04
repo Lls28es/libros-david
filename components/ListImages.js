@@ -1,11 +1,15 @@
 import Link from 'next/link';
-
+import { React, Fragment, useEffect, useState } from 'react';
 const ListImages = (props) => {
-  let { image, index } = props;
-  console.log(props);
+  const [expand, setExpand] = useState(false);
+  let { image, desc } = props;
+
   return (
-    <div className="contImage ">
-      <img alt={image.alt} src={image.src} />
+    <div className="contImage">
+      <div className="photoBox">
+        <img alt={image.alt} src={image.src} />
+        <p className="photoDesc"> {desc}</p>
+      </div>
     </div>
   );
 };

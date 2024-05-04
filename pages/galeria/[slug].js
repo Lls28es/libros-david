@@ -50,12 +50,17 @@ function Index({ slug, id }) {
                   <div className="boxImages row">
                     {images.length !== 0
                       ? images.map((x, i) => {
+                          let aux = book.imageDesc[i].indexOf(':') + 1;
+                          aux = book.imageDesc[i]
+                            .slice(aux, book.imageDesc[i].length)
+                            .trim();
                           return (
                             <ListImages
                               image={{
                                 alt: `${x}`,
                                 src: `/libros/${slug}/${x}.jpg`,
                               }}
+                              desc={aux}
                               index={i}
                               key={i}
                             />

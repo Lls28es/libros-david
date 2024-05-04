@@ -254,7 +254,6 @@
         width: 100%;
 
         .contImage {
-            display: grid;
             width: fit-content;
             justify-items: center;
             margin: 7px;
@@ -267,7 +266,49 @@
                 height: 250px;
                 box-shadow: 0px 0px 10px 1px #919090d0;
             }
+
+            .photoDesc {
+                display: none;
+            }
+
+            transform: 3s;
+            transition:3s;
+
+
+            // &:active {
+            //     width: fit-content;
+            //     justify-items: center;
+            //     margin: 7px;
+            //     position: relative;
+
+            //     .photoBox {
+            //         position: absolute;
+            //         left: 50%;
+            //         top: 50%;
+            //         box-shadow: 0px 0px 10px 1px #919090d0;
+
+            //         img {
+            //             padding: 8px;
+            //             padding-bottom: 5px;
+            //             max-width: -webkit-fill-available;
+            //             min-height: 50vh;
+            //             max-height: 50vh;
+            //             height: 50vh;
+            //         }
+
+            //         .photoDesc {
+            //             display: inline;
+            //             margin: 0 4px 6px 4px;
+            //             padding: 0 3px;
+            //             background: #141414;
+            //             color: white;
+            //             font-family: 'Courier New', Courier, monospace;
+            //             font-weight: 500;
+            //         }
+            //     }
+            // }
         }
+
     }
 }
 

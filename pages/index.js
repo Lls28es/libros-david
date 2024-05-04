@@ -14,7 +14,6 @@ function Home() {
           </Head>
           <div className="row align-items-center justify-content-center p-3 pb-4">
             {ListaLibros.map((x, i) => {
-              console.log(x);
               return <Libros detail={x} key={i} />;
             })}
           </div>
