@@ -1,8 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Libros from '../components/Libros';
 import ListaLibros from '../components/ListaLibros';
+import { auth, db } from '../services/firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { collection, getDocs } from 'firebase/firestore';
 
 function Home() {
   return (

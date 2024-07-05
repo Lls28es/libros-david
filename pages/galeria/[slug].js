@@ -42,7 +42,7 @@ function Index({ slug, id }) {
 
                     <a
                       className="buttonMore"
-                      href={`/leer/${book.linkLeer}?id=${book.id}`}
+                      href={`/leer/${book.linkRead}?id=${book.id}`}
                     >
                       Leer
                     </a>

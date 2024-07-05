@@ -53,7 +53,7 @@ const Libros = ({ detail }) => {
             {/* {detail.observation === 'Disponible' ? (
               <div className="detBook">
                 <p className="detSubrBook">Stock Físico: </p>{' '}
-                <p className="detMargBook">{detail.stockFisico}</p>
+                <p className="detMargBook">{detail.stockPhysical}</p>
               </div>
             ) : null}
 
@@ -65,10 +65,10 @@ const Libros = ({ detail }) => {
             ) : null} */}
 
             <div className="d-flex pt-2 pb-4">
-              {detail?.linkLeer ? (
+              {detail?.linkRead ? (
                 <a
                   className="buttonBuy2"
-                  href={`/leer/${detail.linkLeer}?id=${detail.id}`}
+                  href={`/leer/${detail.linkRead}?id=${detail.id}`}
                 >
                   Leer
                 </a>
