@@ -4,6 +4,7 @@ import { Tooltip } from '@nextui-org/react';
 const Libros = ({ detail }) => {
   return (
     <div id="boxBook" className="row m-4 px-4">
+      {/* {console.log(detail)} */}
       <div className="col-4">
         <img alt="menu-mobile" className="imageBook w-100" src={detail.image} />
       </div>
@@ -90,8 +91,6 @@ const Libros = ({ detail }) => {
             <p className="detSubrBook">Métodos de compra:</p>
 
             <div className="boxButtonsBook my-2">
-              {console.log(detail)}
-              {/********************** */}
               {detail.linkAmazon ? (
                 <a href={detail.linkAmazon} target="_blank">
                   <button className="buyAm buttonMl-0">

@@ -400,7 +400,7 @@ export default [
     year: '',
   },
   {
-    id: 4,
+    id: 5,
     title: <>LISTOS PARA LA BATALLA FUERZAS TERRESTRES</>,
     observation: 'Terminado - No publicado',
     description: ['', '', '', '', '', '', '', '', '', ''],
@@ -410,10 +410,10 @@ export default [
     linkAmazon: undefined,
     stockFisico: 0,
     stockDigital: 0,
-    year: '',
+    year: ' ',
   },
   {
-    id: 5,
+    id: 6,
     title: <>LISTOS PARA LA BATALLA ARMADA ARGENTINA VS ROYAL NAVY</>,
     observation: 'Terminado - No publicado',
     description: ['', '', '', '', '', '', '', '', '', ''],
@@ -423,6 +423,6 @@ export default [
     linkAmazon: undefined,
     stockFisico: 0,
     stockDigital: 0,
-    year: '',
+    year: ' ',
   },
 ];
