@@ -64,42 +64,51 @@ const Libros = ({ detail }) => {
             ) : null} */}
 
             <div className="d-flex pt-2 pb-4">
-              <a
-                className="buttonBuy buttonMl-0"
-                href={`/leer/${detail.linkLeer}?id=${detail.id}`}
-              >
-                Leer
-              </a>
-              <a
-                className="buttonBuy2"
-                href={`/leer/${detail.linkLeer}?id=${detail.id}`}
-              >
-                Leer
-              </a>
-              <a
-                className="buttonBuy3"
-                href={`/galeria/${detail.gallery.file}`}
-              >
-                Galería
-              </a>
+              {detail?.linkLeer ? (
+                <a
+                  className="buttonBuy2"
+                  href={`/leer/${detail.linkLeer}?id=${detail.id}`}
+                >
+                  Leer
+                </a>
+              ) : (
+                <button className="greyColor buttonBuy2">Leer</button>
+              )}
+
+              {detail?.gallery ? (
+                <a
+                  className="buttonBuy3"
+                  href={`/galeria/${detail.gallery.file}`}
+                >
+                  Galería
+                </a>
+              ) : (
+                <button className="greyColor buttonBuy3">Galería</button>
+              )}
             </div>
 
             <p className="detSubrBook">Métodos de compra:</p>
 
             <div className="boxButtonsBook my-2">
+              {console.log(detail)}
+              {/********************** */}
               {detail.linkAmazon ? (
-                <button className="buyAm buttonMl-0">
-                  <img alt="buyAm" className="" src="/amazon.png" />
-                </button>
+                <a href={detail.linkAmazon} target="_blank">
+                  <button className="buyAm buttonMl-0">
+                    <img alt="buyAm" className="" src="/amazon.png" />
+                  </button>
+                </a>
               ) : (
                 <button className="greyColor buyAm buttonMl-0">
                   <img alt="buyAm" src="/amazon.png" />
                 </button>
               )}
               {detail.linkMP ? (
-                <button className="buyMP">
-                  <img alt="buyMP" className="" src="Mercado-libre.jpg" />
-                </button>
+                <a href={detail.linkMP} target="_blank">
+                  <button className="buyMP">
+                    <img alt="buyMP" className="" src="Mercado-libre.jpg" />
+                  </button>
+                </a>
               ) : (
                 <button className="greyColor buyMP">
                   <img alt="buyMP" className="" src="Mercado-libre.jpg" />
