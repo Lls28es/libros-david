@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.2",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@swc/helpers": "^0.5.9",
     "@typeform/embed": "2.9.1",
@@ -22,9 +21,10 @@
     "eslint-config-next": "13.1.1",
     "firebase": "^10.12.3",
     "firebase-tools": "^11.26.0",
+    "html-react-parser": "^5.1.10",
     "mailgun.js": "2.0.1",
     "moment": "2.29.4",
-    "next": "13.4.7",
+    "next": "14.2",
     "npm": "^10.8.1",
     "react": "18.2.0",
     "react-bootstrap": "2.7.0",

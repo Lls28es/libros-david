@@ -175,6 +175,21 @@ button {
     border-radius: 0px !important;
 }
 
+/* ------ nextUI ------ */
+
+.nextui-spinner {
+    width: 80px !important;
+    height: 80px !important;
+
+    .nextui-spinner-container {
+        --nextui--loadingColor: #868a83;
+    }
+}
+
+.nextui-spinnerOverflow {
+    overflow-y: hidden;
+}
+
 /* ------ swal ------ */
 
 .swal2-html-container {
