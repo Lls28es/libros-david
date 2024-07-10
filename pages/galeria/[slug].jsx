@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import Head from 'next/head';
+import parse from 'html-react-parser';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { ref, getDownloadURL } from 'firebase/storage';
 import {
@@ -105,7 +106,7 @@ function Galeria({ id }) {
             <div id="boxBook" className="row">
               {book.title !== '' ? (
                 <div className="bookImages col-12 py-2">
-                  <h2 className="p-1">{book.title}</h2>
+                  <h2 className="p-1">{parse(`${book.title}`)}</h2>
                   <div className="row justify-content-center p-4">
                     <a className="buttonBuy" href="/">
                       Volver

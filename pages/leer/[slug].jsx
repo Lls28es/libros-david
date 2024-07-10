@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import Head from 'next/head';
+import parse from 'html-react-parser';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import {
   doc,
@@ -57,7 +58,7 @@ function Leer({ id }) {
       <div className="row w-100 mx-0" id="wrapper">
         <Layout>
           <Head>
-            <title>Libro {book.title}</title>
+            <title>{parse(`${book.title}`)}</title>
           </Head>
           <div className="row align-items-center justify-content-center p-3">
             {book.title !== '' && book.read ? (

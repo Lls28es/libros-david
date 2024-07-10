@@ -23,7 +23,7 @@ export default function Header(props) {
           {/* <a className="navbar-brand" href="/">
               <img
                 className="logo"
-                alt="logoç"
+                alt="logo"
                 src="/images/logo.png"
               />
             </a> */}
@@ -60,7 +60,7 @@ export default function Header(props) {
                 }
               >
                 <Link href="/imagenes" className="nav-link">
-                  Imagenes utilizadas
+                  Imágenes utilizadas
                 </Link>
               </li>
 
