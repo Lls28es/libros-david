@@ -9,7 +9,7 @@ const ListImages = ({ image }) => {
         <div className="pictureFrame">
           <img alt={image.alt} src={image.src} />
         </div>
-        <p className="photoDesc fs-12"> {image.description}</p>
+        {/* <p className="photoDesc fs-12"> {image.description}</p> */}
       </div>
     </div>
   );
