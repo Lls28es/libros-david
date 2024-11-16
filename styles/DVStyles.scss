@@ -7,11 +7,11 @@
 }
 
 @mixin cBlue {
-    color: #08587d;
+    color: #0180b7;
 }
 
 @mixin bgBlue {
-    background: #08587d;
+    background: #0a93ce;
 }
 
 @mixin cBlue2 {
@@ -191,8 +191,10 @@
     .detSubrBook {
         font-weight: 600;
         @include borderTxt();
-        border-bottom-width: 3px;
-        border-image: linear-gradient(to right, #d3d3d3 0%, #d3d3d3 100%) 1;
+        border-bottom-width: 2px;
+        border-image: linear-gradient(to right, #d3d3d3 0%, #0180b7 100%) 1;
+        // border-bottom-width: 3px;
+        // border-image: linear-gradient(to right, #d3d3d3 0%, #d3d3d3 100%) 1;
     }
 
     .detNormBook,
@@ -372,7 +374,8 @@
         }
 
         .active .nav-link {
-            text-decoration: 1.5px underline #2b7699;
+            text-decoration: 1.5px underline #0a93ce;
+
         }
     }
 }

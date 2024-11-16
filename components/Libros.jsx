@@ -66,13 +66,13 @@ const Libros = ({ detail }) => {
             ) : null} */}
 
             <div className="d-flex pt-2 pb-4">
-              {detail?.read && detail.read.length > 1000 ? (
+              {/* {detail?.read && detail.read.length > 1000 ? (
                 <a className="buttonBuy2" href={`/leer/libro?id=${detail.id}`}>
                   Leer
                 </a>
               ) : (
                 <button className="greyColor buttonBuy2">Leer</button>
-              )}
+              )} */}
 
               {detail?.gallery &&
               detail.gallery.amount &&

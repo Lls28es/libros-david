@@ -111,7 +111,7 @@ function Galeria({ id }) {
                     <a className="buttonBuy" href="/">
                       Volver
                     </a>
-
+                    {/* 
                     {book?.read && book.read.length > 1000 ? (
                       <a
                         className="buttonMore"
@@ -121,7 +121,7 @@ function Galeria({ id }) {
                       </a>
                     ) : (
                       <button className="greyColor buttonMore">Leer</button>
-                    )}
+                    )} */}
                   </div>
                   <div className="boxImages row">
                     {images.length !== 0 ? (
@@ -138,7 +138,7 @@ function Galeria({ id }) {
                       Volver
                     </a>
 
-                    {book?.read && book.read.length > 1000 ? (
+                    {/* {book?.read && book.read.length > 1000 ? (
                       <a
                         className="buttonMore"
                         href={`/leer/libro?id=${book.id}`}
@@ -147,7 +147,7 @@ function Galeria({ id }) {
                       </a>
                     ) : (
                       <button className="greyColor buttonMore">Leer</button>
-                    )}
+                    )} */}
                   </div>
                 </div>
               ) : (

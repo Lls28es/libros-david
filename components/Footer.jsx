@@ -7,14 +7,15 @@ const Footer = () => (
         <div className="col-md-1"></div>
         <div className="col-md-3"></div>
         <div className="col-md-3">
-          <Link href="/sobreMi">
+          {/* <Link href="/sobreMi">
             <p className="fs-14">Sobre Mi</p>
-          </Link>
+          </Link> */}
         </div>
         <div className="col-md-3">
-          <Link href="/contacto">
+          {/* <Link href="/contacto">
             <p className="fs-14">Contacto</p>
-          </Link>
+          </Link> */}
+
           {/* <Link href="/">
             <p>--</p>
           </Link> */}
@@ -33,7 +34,11 @@ const Footer = () => (
       <div className="row">
         <div className="col-md-12">
           <hr />
-          <p className="m-0">© 2024 | L Ll. Todos los derechos reservados</p>
+          <p className="m-0">
+            Sitio web creado por:
+            <br />
+            luciallprogramacion@gmail.com
+          </p>
         </div>
       </div>
     </div>
