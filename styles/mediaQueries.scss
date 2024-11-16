@@ -1,0 +1,1247 @@
+@media screen and (max-width: 1550px) {
+    //m1550
+
+    #home-modal .containerWidth2 {
+        left: 17%;
+    }
+
+    .dilemasHeight {
+        height: 700px;
+
+        .dilemasBox {
+
+            .dilemasBotonAbsol,
+            .dilemasBotonRel {
+                width: 220px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    //m1300
+
+    .containerWidth2 {
+        top: 5%;
+        max-height: 100%;
+    }
+
+    .dilemasHeight {
+        height: 620px;
+
+        .dilemasBox {
+
+            .dilemasBotonAbsol,
+            .dilemasBotonRel {
+                width: 185px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    //m1100
+
+    #home-modal .containerWidth2 {
+        width: 80% !important;
+        left: 20%;
+    }
+
+    .dilemasHeight {
+        height: 560px;
+
+        .dilemasBox {
+
+            .dilemasBotonAbsol,
+            .dilemasBotonRel {
+                width: 150px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    //m900
+
+    .dilemasHeight {
+        height: 500px;
+
+        .dilemasBox {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+            .dilemasBotonAbsol,
+            .dilemasBotonRel {
+
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-desktop {
+        display: block;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    //m767
+
+    #home-modal .containerWidth2 {
+        width: 90% !important;
+        left: 5%;
+    }
+
+    .noRightMargin {
+
+        //aplicar en páginas con el error de margen a la derecha<s
+        //si el contenido se sale de cuadro hay que arreglar el contenido, 
+        //no borrar ni modificar estas lineas
+        .row {
+            min-width: 100% !important;
+            max-width: 100vw !important;
+
+            .col-md-12 .row,
+            .col-md-11 .row,
+            .col-md-10 .row {
+                max-width: 100vw !important;
+            }
+        }
+
+        .col-md-12 .row,
+        .col-md-11 .row,
+        .col-md-10 .row {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+    }
+
+    .styleComputer {
+        display: none !important;
+    }
+
+    .styleMobile {
+        display: flex;
+    }
+
+    .styleMobile2 {
+        display: block;
+    }
+
+    .styleMobile3 {
+        display: inline;
+    }
+
+    .styleMobile4 {
+        display: table-row;
+    }
+
+    .styleBoxGrey {
+
+        .bgBox {
+            // background: #d66060;
+            background: white;
+        }
+
+        // background: #d66060;
+        background: white;
+    }
+
+    .dropdown_menu .row {
+        max-width: 100% !important;
+    }
+
+    .hiddenDivH2 {
+        max-width: 80% !important;
+    }
+
+    .hiddenDiv {
+        width: 20% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .contentTable {
+        display: contents !important;
+    }
+
+    .diagnostic {
+        width: 100%;
+
+        th,
+        td {
+            min-width: 100%;
+        }
+    }
+
+    .tableCalendarizadas th,
+    .tableCalendarizadas td {
+        min-width: 55px !important;
+        // width: max-content;
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    #home-modal .home-popup-container {
+        padding: 15px;
+
+        .button-modal {
+            left: -5px;
+            top: -5px;
+        }
+
+        .divDataCalend {
+            border-right: none;
+        }
+    }
+
+    .colorUnitBox_contents {
+        height: 17px;
+        min-width: 50px !important;
+    }
+
+    .buttonAction {
+        width: 24px;
+        height: 24px;
+
+        svg {
+            margin-bottom: 4px;
+            font-size: 15px;
+        }
+    }
+
+    .massiveList {
+
+        .col,
+        .col-4 {
+            min-width: 30%;
+        }
+
+        .col-4 {
+            justify-content: start !important;
+        }
+
+        button {
+            padding: 5px !important;
+            margin-top: 5px;
+            width: 100% !important;
+            min-width: 90% !important;
+        }
+    }
+
+    .activity-content {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .activity-blue-box {
+        padding-left: 26px !important;
+        padding-right: 20px !important;
+
+        .tematic-image {
+            padding: 10px 0px !important;
+
+            img {
+                width: 200px;
+
+            }
+        }
+
+        .tematic-description {
+            padding: 0px !important;
+        }
+    }
+
+    .activity-box-border .activity-body {
+        padding-top: 7px !important;
+        margin-bottom: 2rem !important;
+        padding-right: 24px !important;
+
+        hr {
+            margin: 25px 0px 0px 22px !important;
+            display: block !important;
+        }
+
+        .hrStyle {
+            display: none !important;
+        }
+
+        .activity-video-description {
+            padding: 0px !important;
+            padding-top: 20px !important;
+        }
+    }
+
+    .activity-descriptions {
+        padding-left: 38px !important;
+        padding-right: 10px !important;
+
+        .activity-padding {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+            p {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+
+        .activity-image {
+
+            text-align: start !important;
+
+            a img,
+            img {
+                padding: 0px !important;
+                width: 150px !important;
+            }
+        }
+    }
+
+    .dilemas_inter {
+        margin-bottom: 20px;
+
+        .fs-38 {
+            font-size: 24px;
+        }
+
+        .fs-24 {
+            font-size: 16px;
+        }
+
+        .fs-22 {
+            font-size: 15px;
+        }
+
+        .fs-20 {
+            font-size: 14px;
+        }
+
+        br {
+            display: block !important;
+        }
+
+        h5,
+        h3 {
+            margin-bottom: 0px;
+        }
+
+        .dropdown_menu,
+        .button_shadow-green2 {
+            margin: 0px !important;
+        }
+
+        .dilemmas_title {
+            display: none !important;
+        }
+
+        .dilemmas_title2 img {
+            max-width: 59%;
+        }
+
+        .dilemas_box-buttons {
+            display: block;
+
+            .dilemas_buttons {
+                display: flex;
+                margin: 0px;
+
+                .button1,
+                .button2 {
+                    width: 100%;
+                    margin: 15px 0px !important;
+
+                    button {
+                        width: 100%;
+                        margin: 0px !important;
+                        padding-top: 2px !important;
+                        padding-bottom: 2px !important;
+                    }
+                }
+
+                .button1 {
+                    padding-right: 10px !important;
+                }
+
+                .button2 {
+                    padding-left: 10px !important;
+                }
+            }
+        }
+    }
+
+
+    .dilemasHeight,
+    .dilemasHeight_mob {
+        height: 220px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .dilemasBox .dilemasBotonAbsol,
+        .dilemasBox .dilemasBotonRel,
+        .dilemasBox a .dilemasBotonAbsol,
+        .dilemasBox a .dilemasBotonRel {
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            width: 170px !important;
+        }
+
+    }
+
+    .dilemasHeight {
+        height: 300px;
+    }
+
+    #main>.py-4 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .measurement_box {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        padding-top: 0px !important;
+
+        .measurement-item {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+
+        .measurament-description {
+            padding-left: 4px !important;
+            padding-right: 4px !important;
+
+            .buttonBlack {
+                margin-top: 10px !important;
+                margin-bottom: 0px !important;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 7px 15px;
+            }
+        }
+
+        select {
+            margin-top: 14px !important;
+            margin-bottom: 2px !important;
+        }
+    }
+
+    .measurements-header-sociogram {
+        background: none;
+    }
+
+    .measurament-body {
+        .measurament-col12 {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+            .sociogram-results-bar {
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+                margin-left: -15px !important;
+                margin-right: -15px !important;
+
+                h4 {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+    .measurament-body .measurement-item {
+        background: none;
+    }
+
+    .measurement-step {
+        h3 {
+            font-size: 30px !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+        }
+
+        .col-1 {
+            width: 30px;
+
+        }
+    }
+
+    .measurements-answers-count-title h3 {
+        font-size: 36px !important;
+    }
+
+    .measurements-answers-count-title p {
+        font-size: 15px !important;
+        line-height: 1.2;
+        padding-left: 8px;
+        padding-top: 1px !important;
+    }
+
+    .measurements-answers-results-button {
+        width: 212px !important;
+    }
+
+    .measurmanet-activities {
+        display: block !important;
+        width: 45% !important;
+        padding: 0px !important;
+
+        button {
+            margin: 10px 0px;
+            min-width: 10px !important;
+            padding: 10px 13px;
+            font-size: 14px;
+            border-radius: 25px;
+        }
+
+    }
+
+    .edut-statistics {
+        padding-top: 0px !important;
+        display: block;
+
+        p {
+            margin-bottom: 10px !important;
+            line-height: 1.2 !important;
+        }
+    }
+
+    .edut-buttons {
+        display: flex;
+        justify-content: flex-start !important;
+
+    }
+
+    .edut-buttons>div,
+    .edut-buttons>a {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        display: block !important;
+        width: 50%;
+    }
+
+    .edut-download img {
+        max-width: 24px !important;
+        max-height: 24px !important;
+    }
+
+    .edut-teacherButtons {
+        display: grid;
+        grid-template-areas:
+            'left1 right1'
+            'left2 right2'
+            'left3 right3'
+            'left4 right4'
+            'left5 right5'
+            'left6 right6';
+
+        .left1 {
+            grid-area: left1;
+        }
+
+        .left2 {
+            grid-area: left2;
+        }
+
+        .left3 {
+            grid-area: left3;
+        }
+
+        .left4 {
+            grid-area: left4;
+        }
+
+        .left5 {
+            grid-area: left5;
+        }
+
+        .left6 {
+            grid-area: left6;
+        }
+
+        .right1 {
+            grid-area: right1;
+        }
+
+        .right2 {
+            grid-area: right2;
+        }
+
+        .right3 {
+            grid-area: right3;
+        }
+
+        .right4 {
+            grid-area: right4;
+        }
+
+        .right5 {
+            grid-area: right5;
+        }
+
+        .right6 {
+            grid-area: right6;
+        }
+    }
+
+    /* ----- páginas schedule, notification,users ----- */
+
+    .schedulePreview {
+        justify-content: left !important;
+
+        .col-5 {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .stateClase {
+
+            margin-bottom: 0px !important;
+        }
+
+        .calendarClase {
+            padding-left: 0px !important;
+            padding-right: 2px !important;
+        }
+
+        br {
+            display: block !important;
+        }
+
+        h5 {
+            display: block !important;
+            line-height: 1.4;
+
+            .numberClase {
+                font-size: 15px !important;
+            }
+
+            .nameClase {
+                padding-left: 0px !important;
+                // font-size: 20px !important;
+            }
+        }
+
+        p {
+            width: 150px;
+            font-size: 13px !important;
+
+        }
+
+        .buttonsClase {
+            text-align: end;
+
+            .button-blue {
+                padding: 5px 10px !important;
+            }
+        }
+
+        .stateClase,
+        .calendarClase,
+        .buttonsClase {
+            width: 90% !important;
+            max-width: 90% !important;
+        }
+    }
+
+    /* ----- home director y teacher ----- */
+    .count_content,
+    .boxAreas50,
+    .boxAreas55,
+    .boxAreas33 {
+
+        flex: 0 0 auto;
+        width: 48%;
+
+        a {
+            width: 100%;
+            margin-bottom: 7px;
+        }
+
+        .count-box {
+            width: 100%;
+            height: 70px;
+            padding: 7px 5px;
+
+            h2 {
+                margin-top: 3px !important;
+            }
+        }
+
+    }
+
+    .boxAreas50 {
+        width: 50%;
+    }
+
+    .boxAreas55 {
+        width: 55%;
+    }
+
+    .boxAreas33 {
+        width: 33.3%;
+    }
+
+
+    .toggle {
+        position: absolute;
+        right: 10px
+    }
+
+    .deletePadding {
+        .px-5 {
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 0px !important;
+        }
+    }
+
+    .button-purple {
+        position: relative;
+        padding-left: 14px !important;
+
+        svg {
+            position: absolute;
+            right: 12px;
+            top: 23px;
+        }
+    }
+
+    /* ----- contenido area course y level ----- */
+
+    .colorUnitBox_indice {
+        width: 35px;
+        height: 11px;
+        margin: 5px 0 7px 0;
+        border-radius: 1px;
+    }
+
+    .colorUnitBox {
+        padding-left: 5px !important;
+        padding-right: 10px !important;
+
+        .unitBox_title {
+            h3 {
+                width: -webkit-fill-available
+            }
+
+            // padding-top: 0px !important;
+            height: 50px;
+        }
+
+        .unitBox_description {
+            padding-top: 0px !important;
+            padding-right: 10px !important;
+
+            .styleMobile {
+                display: block;
+            }
+        }
+
+        .col-md-8 {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
+
+        .unitBox_description_height {
+            height: 60px;
+        }
+
+        .buttonHeight {
+            padding-bottom: -3px !important;
+
+            .unitExpand {
+                position: absolute;
+                right: -15px;
+            }
+        }
+    }
+
+    .colorUnitBox>.px-4 {
+        padding-left: 1rem !important;
+        padding-right: 0.7rem !important;
+    }
+
+    .unitBox_colorUnitBox_height {
+        height: 140px;
+    }
+
+    /* ----- clases de unidad ----- */
+    .switch {
+        padding: 15px 3px 0px 3px !important;
+
+        h3 {
+            font-size: 13px;
+        }
+
+        .pr-4 {
+            padding-right: 10px !important;
+        }
+
+        .pl-4 {
+            padding-left: 10px !important;
+        }
+
+        .switchFales .react-switch-handle {
+            transform: translateX(0%) !important;
+        }
+
+        .switchTrue .react-switch-handle {
+            transform: translateX(200%) !important;
+        }
+
+        .switchContent {
+
+            .react-switch-handle {
+                margin: 12px 0px;
+                height: 19px !important;
+                width: 19px !important;
+            }
+
+            .react-switch-bg {
+                height: 11px !important;
+                margin: 16px 1px !important;
+                width: 55px !important;
+            }
+
+        }
+    }
+
+    .TYP {
+        padding: 10px 0px !important;
+
+        h3 b {
+            font-size: 22px;
+        }
+
+        .checkImg {
+            width: 45px;
+            padding: 4px !important;
+        }
+
+        .col-md-5 {
+            margin-top: 7px !important;
+            margin-bottom: 0px !important;
+            padding: 10px 0px !important;
+        }
+
+        .redesImgs {
+            padding: 0px !important;
+        }
+
+        .logo {
+            width: 160px;
+        }
+    }
+
+    /* ----- paginas estadísticas ----- */
+
+    .box-statistics {
+        padding-right: 5px !important;
+    }
+
+    .box-statistics {
+
+        .box-statistics-title {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            padding-bottom: 0px !important;
+
+            .image-statistic-title {
+                padding-right: 10px !important;
+                width: 65px;
+                height: auto;
+            }
+
+            h2 {
+                display: block;
+                font-size: 17px !important;
+            }
+
+            .pdl-35 {
+                padding-left: 21px !important;
+            }
+
+        }
+
+    }
+
+    .box-statistic-desc {
+        p {
+            padding-top: 10px !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+
+        .col-md-5 {
+            width: 80% !important;
+            padding-top: 5px !important;
+            padding-bottom: 10px !important;
+
+            .level-box {
+                padding-top: 12px !important;
+                padding-bottom: 12px !important;
+
+                border-radius: 20px;
+
+                h3 {
+                    font-size: 12px;
+                    font-weight: 800 !important;
+
+                }
+            }
+        }
+
+        .box-statistic-measuraments {
+            padding-top: 0px !important;
+
+            .img-scale-shadow {
+                width: 180px;
+            }
+        }
+    }
+
+    .box-statistics-bars {
+
+        margin-top: 10px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .col-1 {
+            margin-top: 12px !important;
+            padding-bottom: 5px
+        }
+
+        .col-md-7 {
+            margin-top: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+            .progressText {
+                .col-md-12 {
+                    padding-bottom: 5px !important;
+                    height: auto;
+                }
+
+                h5 {
+                    font-size: 14px;
+                    padding-top: 0px !important;
+                }
+            }
+
+        }
+
+        .col-10 {
+            margin-top: 0px !important;
+        }
+
+        .progressBars {
+            padding-top: 10px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .progressBars .progress-number {
+            padding-top: 10px !important;
+
+            h6 {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .progressBars-unit {
+        margin-top: 0px !important;
+
+        p {
+            margin: 0px;
+        }
+
+        br {
+            display: none;
+        }
+    }
+
+    .box-statisticsEval-download {
+        width: 100%;
+        padding-left: 18px !important;
+        padding-right: 10px !important;
+    }
+
+    .text-ComparativeCollege {
+        padding-left: 5px;
+    }
+
+    .diagnostic {
+        .diagnosticoTd {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    //m700
+
+    .dilemasHeight,
+    .dilemasHeight_mob {
+
+        height: 155px;
+
+        .dilemasBox .dilemasBotonAbsol,
+        .dilemasBox .dilemasBotonRel,
+        .dilemasBox a .dilemasBotonAbsol,
+        .dilemasBox a .dilemasBotonRel {
+
+            width: 150px !important;
+        }
+    }
+
+    .dilemasHeight {
+        height: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    //m400
+    .tableMobileColor,
+    .tableMobileColor2,
+    .tableMobileColor3 {
+        display: table !important;
+        border-collapse: collapse;
+        border-radius: 15px;
+        overflow: hidden;
+        background: #c8d9ecc7;
+        box-shadow: 2px 2px 4px 1px #e4e3e3;
+
+        tbody {
+            border-bottom: 1px solid #aaa8a89a;
+        }
+
+        tr {
+            border: 1px solid #e7e4e49a;
+            border-bottom: 1px solid #00000000;
+
+            td {
+                border-top: 1px solid #ffffff00 !important;
+            }
+
+            .tableOptions {
+                border-top: 1px solid #d6dde49a !important;
+                background: #c8d9ec;
+            }
+        }
+    }
+
+    .tableMobileColor2 {
+        width: 97.5% !important;
+        background: #e6ecf1;
+        border-bottom: 1px solid #1d64aa !important;
+    }
+
+    .tableMobileColor3 {
+        width: 97.5% !important;
+        background: #eaeaeb;
+        border-bottom: 1px solid #1d64aa !important;
+    }
+
+    .tableMobile,
+    .tableMobile2,
+    .tableMobile3 {
+        width: 95%;
+
+        thead {
+            display: none;
+        }
+
+        tr {
+            display: flex !important;
+            flex-direction: column;
+            padding-top: 5px;
+
+            td {
+                padding: 2px 7px;
+
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            .tableOptions {
+                margin-top: 5px !important;
+                padding-bottom: 4px;
+            }
+
+            .nextui-c-dfbgC,
+            .nextui-c-cMTZRp {
+                display: flex;
+                justify-content: center;
+            }
+
+            td[data-titulo] {
+                display: flex;
+                align-items: center;
+            }
+
+            td[data-titulo]::before {
+                content: attr(data-titulo);
+                padding-right: 5px;
+                font-size: 11px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .tableMobile2 {
+        width: 100% !important;
+    }
+
+    .tableMobile3 {
+        width: 100% !important;
+
+        tr {
+            padding-top: 0px !important;
+
+            .tableOptions {
+
+                margin-top: 0px !important;
+            }
+
+            td {
+                padding-top: 4px;
+                padding-bottom: 3px;
+            }
+        }
+    }
+
+    .dilemasHeight,
+    .dilemasHeight_mob {
+
+        height: 135px;
+
+        .dilemasBox .dilemasBotonAbsol,
+        .dilemasBox .dilemasBotonRel,
+        .dilemasBox a .dilemasBotonAbsol,
+        .dilemasBox a .dilemasBotonRel {
+
+            width: 130px !important;
+        }
+    }
+
+    .dilemasHeight {
+        height: 200px;
+    }
+
+    .disp_cont {
+        width: fit-content;
+
+    }
+
+    .hrStyle {
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+    }
+
+    .TYP {
+        h3 b {
+            font-size: 20px !important;
+        }
+
+        .typPage {
+            padding: 20px 30px !important;
+
+            .optcont {
+
+                p {
+                    font-size: 12px;
+                }
+
+                .redesImgs {
+                    .redes-logo {
+                        width: 30px !important;
+                        margin: 2px 5px;
+                    }
+                }
+
+                .logo {
+                    width: 150px;
+                    padding: 0 0 10px 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    //m350
+
+    .edut-buttons a>.w-140,
+    .edut-download {
+        min-width: 120px !important;
+        max-width: 120px !important;
+    }
+
+    .edut-download {
+        min-width: 135px !important;
+        max-width: 135px !important;
+    }
+
+    .edut-buttons a>button {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+        height: 31px;
+        margin: 5px !important;
+
+        h3 {
+            font-size: 11px !important;
+        }
+
+        svg {
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+    }
+
+    .edut-download {
+        margin: 3px 0px 3px 5px !important;
+
+        img {
+            margin-right: 7px !important;
+        }
+
+        p {
+            font-size: 11px !important;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    //m300
+
+    .dilemasHeight,
+    .dilemasHeight_mob {
+
+        height: 120px;
+
+        .dilemasBox .dilemasBotonAbsol,
+        .dilemasBox .dilemasBotonRel,
+        .dilemasBox a .dilemasBotonAbsol,
+        .dilemasBox a .dilemasBotonRel {
+
+            width: 115px !important;
+        }
+    }
+
+    .dilemasHeight {
+        height: 200px;
+    }
+}
