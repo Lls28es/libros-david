@@ -45,6 +45,7 @@ export default function Header(props) {
               </li>
 
               {/* <li
+
                 className={
                   currentPath == '/sobreMi' ? 'nav-item active' : 'nav-item'
                 }
@@ -52,6 +53,7 @@ export default function Header(props) {
                 <Link href="/sobreMi" className="nav-link">
                   Sobre Mi
                 </Link>
+
               </li> */}
 
               <li
@@ -63,8 +65,8 @@ export default function Header(props) {
                   Imágenes utilizadas
                 </Link>
               </li>
-
               {/* <li
+
                 className={
                   currentPath == '/contacto' ? 'nav-item active' : 'nav-item'
                 }
