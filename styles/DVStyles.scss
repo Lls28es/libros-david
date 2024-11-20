@@ -327,7 +327,6 @@
             //     }
             // }
         }
-
     }
 }
 
@@ -387,22 +386,30 @@
     text-transform: uppercase;
 }
 
-#footer-links,
-#footer-links a {
+#footer-links {
     background: #141414;
-    color: #8d8f94;
-    font-size: 12px;
-    cursor: pointer;
-}
 
-#footer-links p:hover,
-#footer-links a:hover {
-    @include cYellow();
-    text-decoration: none;
-}
+    p {
+        font-weight: 600;
+        color: #1b7ca6;
+    }
 
-#footer-links hr {
-    border-top: 1px solid #919191;
+    a {
+        font-weight: 600;
+        color: #1b7ca6;
+        cursor: pointer;
+        text-decoration: none;
+        transition: .2s;
+
+        & :hover {
+            color: rgb(145, 191, 232);
+            text-decoration: solid;
+        }
+    }
+
+    hr {
+        border-top: 1px solid #919191;
+    }
 }
 
 @media (max-width: 340px) {
