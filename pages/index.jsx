@@ -57,7 +57,10 @@ function Home() {
           <Head>
             <title>Libros</title>
           </Head>
-          <div className="row align-items-center justify-content-center p-3 pb-4">
+          <div
+            id="bodyCont"
+            className="row align-items-center justify-content-center p-3 pb-4"
+          >
             {libros.length !== 0 ? (
               libros.map((x, i) => {
                 return <Libros detail={x} key={i} />;

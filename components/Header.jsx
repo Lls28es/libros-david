@@ -33,7 +33,7 @@ export default function Header(props) {
                 ? 'collapse navbar-collapse show'
                 : 'collapse navbar-collapse'
             }
-            id="navbarToggler"
+            // id="navbarToggler"
           >
             <ul className="navbar-nav mt-2 mt-lg-0">
               <li
@@ -77,8 +77,8 @@ export default function Header(props) {
               </li> */}
             </ul>
           </div>
-          <div className="logo"></div>
-          <button
+          {/* <div className="logo"></div> */}
+          {/* <button
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -95,7 +95,7 @@ export default function Header(props) {
                 onClick={() => toggleNavbar()}
               />
             </span>
-          </button>
+          </button> */}
         </nav>
       </div>
     </Fragment>
