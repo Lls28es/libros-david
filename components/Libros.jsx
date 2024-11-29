@@ -6,10 +6,10 @@ import SpinnerColor from './SpinnerColor.jsx';
 const Libros = ({ detail }) => {
   return (
     <div id="boxBook" className="row m-4 px-4">
-      <div className="col-4">
+      <div className="col-11 col-sm-10 col-md-5 col-lg-6 col-xl-5 imgBook">
         <img alt="menu-mobile" className="imageBook w-100" src={detail.image} />
       </div>
-      <div className="col-8 detailBook">
+      <div className="col-11 col-sm-10 col-md-7  col-lg-6 col-xl-7 detailBook">
         <h2 className="titleBook">{parse(`${detail.title}`)}</h2>
         <p
           className={`${
