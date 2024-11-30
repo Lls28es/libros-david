@@ -44,18 +44,6 @@ export default function Header(props) {
                 </Link>
               </li>
 
-              {/* <li
-
-                className={
-                  currentPath == '/sobreMi' ? 'nav-item active' : 'nav-item'
-                }
-              >
-                <Link href="/sobreMi" className="nav-link">
-                  Sobre Mi
-                </Link>
-
-              </li> */}
-
               <li
                 className={
                   currentPath == '/imagenes' ? 'nav-item active' : 'nav-item'

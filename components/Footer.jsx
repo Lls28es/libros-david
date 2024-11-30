@@ -59,9 +59,6 @@ const Footer = () => (
             />
             <p className="fs-14 mb-1">Malvinas Por David Trapé</p>
           </Link>
-          {/* <Link href="/contacto">
-            <p className="fs-14">Contacto</p>
-          </Link> */}
         </div>
         <div className="col-md-3"></div>
         <div className="col-md-3">
@@ -75,7 +72,6 @@ const Footer = () => (
           </Link>
         </div>
         <div className="col-md-1"></div>
-        {/* <div className="col-md-1"></div> */}
       </div>
       {/* <div className="row">
         <div className="col-md-12">

@@ -1,5 +1,6 @@
 import parse from 'html-react-parser';
 import SpinnerColor from './SpinnerColor.jsx';
+import Detail from './Detail.jsx';
 // import Link from 'next/link';
 // import { Tooltip } from '@nextui-org/react';
 
@@ -33,21 +34,10 @@ const Libros = ({ detail }) => {
               <p className="detNormBook">{detail.description}</p>
             ) : (
               <>
-                {detail.description.length !== 0
-                  ? detail.description.map((x, i) => {
-                      detail.count = detail.description
-                        .slice(0, i + 1)
-                        .join(',').length;
-
-                      if (detail.count < 2400 || i === 0) {
-                        return (
-                          <p className="detNormBook" key={i}>
-                            {x}
-                          </p>
-                        );
-                      }
-                    })
-                  : null}
+                {detail.description.length !== 0 &&
+                detail.description[0].length > 10 ? (
+                  <Detail description={detail.description} />
+                ) : null}
               </>
             )}
 
@@ -114,7 +104,7 @@ const Libros = ({ detail }) => {
                 </button>
               )}
             </div>
-            <p className="fs-12 ff-gotham text-muted mt-1 mx-2">
+            <p className="fs-12 ff-gotham text-muted mx-2 my-1">
               {detail.linkAmazon && detail.linkAmazon
                 ? '* Amazon libro físico y digital. Mercado Pago libro digital'
                 : detail.linkAmazon
