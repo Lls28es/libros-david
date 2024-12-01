@@ -25,13 +25,13 @@ const Libros = ({ detail }) => {
         {detail.observation !== 'No publicado' ? (
           <>
             <div className="detBook">
-              <p className="detSubrBook">Año: </p>{' '}
-              <p className="detMargBook">{detail.year}</p>
+              <p className="detSubrBook fs-18">Año: </p>{' '}
+              <p className="detMargBook fs-18">{detail.year}</p>
             </div>
 
-            <p className="detSubrBook mb-2">Descripción:</p>
+            <p className="detSubrBook fs-18 mb-2">Descripción:</p>
             {typeof detail.description === 'string' ? (
-              <p className="detNormBook">{detail.description}</p>
+              <p className="detNormBook fs-18">{detail.description}</p>
             ) : (
               <>
                 {detail.description.length !== 0 &&
@@ -43,15 +43,15 @@ const Libros = ({ detail }) => {
 
             {/* {detail.observation === 'Disponible' ? (
               <div className="detBook">
-                <p className="detSubrBook">Stock Físico: </p>{' '}
-                <p className="detMargBook">{detail.stockPhysical}</p>
+                <p className="detSubrBook fs-18">Stock Físico: </p>{' '}
+                <p className="detMargBook fs-18">{detail.stockPhysical}</p>
               </div>
             ) : null}
 
             {detail.observation === 'Disponible' ? (
               <div className="detBook">
-                <p className="detSubrBook">Stock Digital: </p>{' '}
-                <p className="detMargBook">{detail.stockDigital}</p>
+                <p className="detSubrBook fs-18">Stock Digital: </p>{' '}
+                <p className="detMargBook fs-18">{detail.stockDigital}</p>
               </div>
             ) : null} */}
 
@@ -78,7 +78,7 @@ const Libros = ({ detail }) => {
               )}
             </div>
 
-            <p className="detSubrBook">Métodos de compra:</p>
+            <p className="detSubrBook fs-18">Métodos de compra:</p>
 
             <div className="boxButtonsBook my-2">
               {detail.linkAmazon ? (
