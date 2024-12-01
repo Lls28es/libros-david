@@ -55,7 +55,7 @@ const Libros = ({ detail }) => {
               </div>
             ) : null} */}
 
-            <div className="d-flex pt-2 pb-4">
+            <div className="buttonGalery d-flex pt-2 pb-4">
               {/* {detail?.read && detail.read.length > 1000 ? (
                 <a className="buttonBuy2" href={`/leer/libro?id=${detail.id}`}>
                   Leer

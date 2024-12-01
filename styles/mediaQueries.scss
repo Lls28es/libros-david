@@ -4,6 +4,26 @@
 // sm 767  a 576
 //    575  a inf
 
+@media (max-width:1200px) {
+    .detailBook .detBook {
+        margin-bottom: 7px;
+    }
+
+    .detailBook .buttonGalery {
+        padding-bottom: 15px !important;
+    }
+
+    .detailBook .contentDescription {
+        max-height: 370px;
+    }
+}
+
+@media (max-width:1199px) {
+    .detailBook .contentDescription {
+        max-height: 364px;
+    }
+}
+
 @media (max-width: 991px) {
     //m991
 
@@ -29,6 +49,30 @@
         min-height: 94vh;
         padding: 0px;
         margin-top: 0px;
+    }
+}
+
+@media (max-width:900px) {
+
+    .detailBook {
+        .titleBook {
+            font-size: 26px;
+        }
+
+        .observationRed {
+            font-size: 16px;
+        }
+
+        .contentDescription {
+            max-height: 296px;
+        }
+    }
+
+    .buttonBuy2,
+    .buttonBuy3,
+    .buttonBuy,
+    .buttonMore {
+        font-size: 16px;
     }
 }
 
