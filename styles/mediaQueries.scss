@@ -97,6 +97,22 @@
             }
         }
     }
+
+    .developerInfo {
+        display: flex;
+        justify-content: center;
+
+        p {
+            margin: 15px 2px;
+            // display: inline;
+            text-align: center !important;
+        }
+
+        a p {
+            text-decoration: underline;
+            color: #a2adb1 !important;
+        }
+    }
 }
 
 @media (max-width: 500px) {

@@ -61,7 +61,7 @@ const Footer = () => (
           </Link>
         </div>
         <div className="col-md-3"></div>
-        <div className="col-md-3">
+        <div className="developerInfo col-md-3">
           <p className="fs-14 mb-1 text-end">Sitio web creado por </p>
           <Link
             href="mailto:luciallprogramacion@gmail.com"
