@@ -14,7 +14,7 @@ const Detail = ({ description }) => {
           </p>
         ))}
       </div>
-      {description.join(' ').length > 1400 && (
+      {description.join(' ').length > 950 && (
         <p className="togglerDescription fs-18 fw-600" onClick={toggleExpand}>
           {expand ? 'Leer menos...' : 'Leer más...'}
         </p>
