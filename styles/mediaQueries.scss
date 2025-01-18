@@ -79,6 +79,24 @@
 @media (max-width: 767px) {
     //m767
 
+    .bookImages .boxImages .contImage {
+        margin: 3px;
+        padding: 5px;
+
+        .photoBox {
+            .pictureFrame {
+                padding: 6px;
+
+                img {
+                    min-height: 100px;
+                    max-height: 200px;
+                    height: 200px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
     .layoutChild {
 
         #boxBook {
