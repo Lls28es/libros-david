@@ -27,6 +27,10 @@
 @media (max-width: 991px) {
     //m991
 
+    .detailBook .contentDescription {
+        max-height: 300px;
+    }
+
     #header {
         box-shadow: none;
         position: inherit;
@@ -62,10 +66,6 @@
         .observationRed {
             font-size: 16px;
         }
-
-        .contentDescription {
-            max-height: 296px;
-        }
     }
 
     .buttonBuy2,
@@ -78,6 +78,10 @@
 
 @media (max-width: 767px) {
     //m767
+
+    .detailBook .contentDescription {
+        max-height: 230px;
+    }
 
     .bookImages .boxImages .contImage {
         margin: 3px;

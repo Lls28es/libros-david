@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Detail = ({ description }) => {
   const [expand, setExpand] = useState(false);
@@ -14,7 +14,7 @@ const Detail = ({ description }) => {
           </p>
         ))}
       </div>
-      {description.join(' ').length > 950 && (
+      {description.join(' ').length > 800 && (
         <p className="togglerDescription fs-18 fw-600" onClick={toggleExpand}>
           {expand ? 'Leer menos...' : 'Leer más...'}
         </p>
